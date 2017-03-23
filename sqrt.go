@@ -11,8 +11,7 @@ func Sqrt(x float64) float64 {
     z := x
     for p := 0.0; math.Abs(p-z) >= v; {
         p = z
-        z = z - (z*z - x)/(2*z)        
-        
+        z = z - (z*z - x)/(2*z)      
     }
     return z
 }
