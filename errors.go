@@ -14,7 +14,7 @@ func (e ErrNegativeSqrt) Error() string {
 func Sqrt(x float64) (float64, error) {
     if(x < 0) {
         return 0, ErrNegativeSqrt(x)
-	}
+    }
     v := 0.000001
     z := x
     for p := 0.0; math.Abs(p-z) >= v; {
